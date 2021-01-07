@@ -8,7 +8,8 @@ import bio, {
   bioIconWrapper,
 } from "../css/components/bio"
 
-const Bio = memo(({ author, avatar }) => {
+const Bio = memo(({ author, avatar, social }) => {
+  const { github, facebook, twitter } = social
   return (
     <div css={bio}>
       {avatar && (
@@ -24,7 +25,7 @@ const Bio = memo(({ author, avatar }) => {
         <p>{author?.summary}</p>
         <div css={bioIconWrapper}>
           <a
-            href="https://github.com/nickname"
+            href={`https://github.com/${github}`}
             target="_blank"
             rel="noreferrer"
             aria-label="Github"
@@ -32,7 +33,7 @@ const Bio = memo(({ author, avatar }) => {
             <FaGithub />
           </a>
           <a
-            href="https://www.facebook.com/nickname"
+            href={`https://www.facebook.com/${facebook}`}
             target="_blank"
             rel="noreferrer"
             aria-label="Facebook"
@@ -40,7 +41,7 @@ const Bio = memo(({ author, avatar }) => {
             <FaFacebook />
           </a>
           <a
-            href="https://twitter.com/nickname"
+            href={`https://twitter.com/${twitter}`}
             target="_blank"
             rel="noreferrer"
             aria-label="Twitter"

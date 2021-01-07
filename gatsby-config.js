@@ -6,10 +6,14 @@ module.exports = {
       summary: `Gatsby blog starter template`,
     },
     description: `Gatsby blog starter template`,
-    siteUrl: `https://gatsbystarteryong.gtsb.io/`,
+    siteUrl: `https://gatsby-starter-yong.netlify.app/`,
     social: {
-      twitter: `insert your twitter`,
+      twitter: ``,
+      facebook: ``,
+      github: ``,
     },
+    utterances: `dayongbz/gatsby-starter-yong/comment`,
+    buyMeACoffee: `dayongbz`,
   },
   plugins: [
     {
