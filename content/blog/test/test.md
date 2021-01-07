@@ -4,6 +4,7 @@ date: 2021-01-07 18:15:00 +0900
 categories: [test]
 tags: [test]
 description: for testing markdown
+featuredImage: ./images/sample.png
 series: test
 ---
 
