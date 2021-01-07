@@ -86,13 +86,15 @@ const BlogPostTemplate = ({ data, location }) => {
       </article>
       <div css={sponsorButtonWrapper}>
         <SponsorButton
-          href="https://www.buymeacoffee.com/dayongbz"
+          href="https://www.buymeacoffee.com/yournickname"
           text="🍗 Buy me a chicken"
         />
       </div>
       {post.frontmatter.tags && <TagsWrapper post={post} />}
       <hr ref={observeElemRef} />
-      {isUtterence ? <Utterances repo="dayongbz/utterances_comment" /> : null}
+      {isUtterence ? (
+        <Utterances repo="dayongbz/gatsby-starter-yong-comment" />
+      ) : null}
       <BlogPostNav previous={previous} next={next} />
     </Layout>
   )
