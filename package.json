@@ -1,8 +1,7 @@
 {
   "name": "gatsby-starter-yong",
-  "private": true,
   "description": "Gatsby blog starter template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Dayong Lee <dayongbz@gmail.com>",
   "bugs": {
     "url": "https://github.com/dayongbz/gatsby-starter-yong/issues"
@@ -50,7 +49,7 @@
   },
   "homepage": "https://github.com/dayongbz/gatsby-starter-yong#readme",
   "keywords": [
-    "gatsby"
+    "gatsby","gatsby-plugin"
   ],
   "license": "0BSD",
   "main": "n/a",

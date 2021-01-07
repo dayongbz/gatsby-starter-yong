@@ -17,13 +17,15 @@ const PostList = memo(({ posts }) => {
     // lazy load
     if (parentRef.current) {
       const parent = parentRef.current
-      const elements = Array.from(parent.children)
-      const target = elements[state.visiblePostCount - 1]
+      const target = parent.lastChild
 
       const observer = new IntersectionObserver(
         entries => {
           entries.forEach(entry => {
-            if (entry.isIntersecting) {
+            if (
+              entry.isIntersecting &&
+              posts?.length > state.visiblePostCount
+            ) {
               dispatch({ type: "ADD_VISIBLE_POST_COUNT" })
             }
           })
@@ -35,7 +37,7 @@ const PostList = memo(({ posts }) => {
         if (target) observer.unobserve(target)
       }
     }
-  }, [dispatch, state.posts, state.visiblePostCount])
+  }, [dispatch, posts, state.visiblePostCount])
 
   return (
     <>
