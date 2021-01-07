@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Dayong Lee Blog`,
+    title: `gatsby-starter-yong`,
     author: {
-      name: `Dayong Lee`,
-      summary: `I am a university student who is living in Korea and interested in technology and economy. I like to get various and useful information 😄`,
+      name: `gatsby-starter-yong`,
+      summary: `Gatsby blog starter template`,
     },
-    description: `This blog focuses on technology and economics.`,
-    siteUrl: `https://dayongbz.github.io/gatsby-starter-yong`,
+    description: `Gatsby blog starter template`,
+    siteUrl: `https://gatsbystarteryong.gtsb.io/`,
     social: {
-      twitter: `dayongbz`,
+      twitter: `insert your twitter`,
     },
   },
   plugins: [
@@ -76,12 +76,12 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-176287431-1`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: [insert your id],
+    //   },
+    // },
     `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
@@ -114,8 +114,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Dayong Lee Blog`,
-        short_name: `Dayong Lee`,
+        name: `gatsby-starter-yong`,
+        short_name: `gatsby-starter-yong`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0366d6`,
