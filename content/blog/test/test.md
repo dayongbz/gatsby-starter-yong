@@ -1,10 +1,10 @@
 ---
 title: Test markdown
-date: 2021-01-07 18:15:00 +0900
+date: 2021-01-07 19:15:00 +0900
 categories: [test]
 tags: [test]
 description: for testing markdown
-featuredImage: ./images/sample.png
+featuredImage: ./images/sample.jpg
 series: test
 ---
 
@@ -119,4 +119,4 @@ Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
 ## Images
 
-![sample](./images/sample.png)
+![sample](./images/sample.jpg)
