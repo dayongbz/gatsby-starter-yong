@@ -1,6 +1,12 @@
 # gatsby-starter-yong
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12f046ac-43cc-4748-8e38-8e9bc2e249d8/deploy-status)](https://app.netlify.com/sites/gatsby-starter-yong/deploys) ![David](https://img.shields.io/david/dayongbz/gatsby-starter-yong) ![GitHub](https://img.shields.io/github/license/dayongbz/gatsby-starter-yong) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dayongbz/gatsby-starter-yong/Node.js%20CI)
+
 ![demo](./content/assets/demo.png)
+
+## ✨Demo
+
+[Demo Site](https://gatsby-starter-yong.netlify.app/)
 
 ## 🎉Feature
 
@@ -12,10 +18,9 @@
 - \# tags
 - 🔗 Title of Contents
 - 🎨 Featured Image
-
-## ✨Demo
-
-[Demo Site](https://gatsby-starter-yong.netlify.app/)
+- 🛠 Github Action(Build & Deploy to gh-pages Or netlify)
+  - Icremental Build
+- ⌛ Lazy load(Post List and Image)
 
 ## 🚀 Quick start
 
@@ -47,7 +52,7 @@
 
 ## ⚙ Configure
 
-1. Change site meta data **required**
+1. **Setting up your site environment**
 
 ```js
 // gatsby-config.js
@@ -67,9 +72,30 @@ siteMetadata: {
   utterances: `github nickname/repo`,
   buyMeACoffee: `buy me a coffee id`,
 }
+
+// ...
+
+{
+  resolve: `gatsby-plugin-manifest`,
+  options: {
+    name: `site name`,
+    short_name: `site short name`,
+    start_url: `/`,
+    background_color: `#ffffff`,
+    theme_color: `#0366d6`,
+    display: `minimal-ui`,
+    icon: `content/assets/icon.png`,
+  },
+},
 ```
 
-2. Run `preload-fonts` for preload fonts **optional**
+Please change the files below after making the corrections as above.
+
+- `content/assets/icon.png`: icon(`512x512`)
+- `content/assets/metaDefault.png`: meta image(`1200x680`)
+- `content/assets/profile.png`: profile image(`1280x1280`)
+
+2. **Run `preload-fonts` for preload fonts**
 
 Before building your application, you will need to generate a font asset map using the included gatsby-preload-fonts script.
 
@@ -142,6 +168,4 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayongbz/gatsby-starter-yong)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/dayongbz/gatsby-starter-yong)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/dayongbz/gatsby-starter-yong) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/dayongbz/gatsby-starter-yong)
