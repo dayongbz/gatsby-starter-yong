@@ -70,7 +70,7 @@ export const pageQuery = graphql`
     series: allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { series: { ne: "null" } } }
+      filter: { frontmatter: { series: { ne: null } } }
     ) {
       group(field: frontmatter___series) {
         series: fieldValue
