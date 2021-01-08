@@ -12,7 +12,7 @@ module.exports = {
       facebook: ``,
       github: ``,
     },
-    utterances: `dayongbz/gatsby-starter-yong/comment`,
+    utterances: `dayongbz/gatsby-starter-yong-comment`,
     buyMeACoffee: `dayongbz`,
   },
   plugins: [
