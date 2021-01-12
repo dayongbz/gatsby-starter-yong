@@ -1,7 +1,7 @@
 ---
 title: Test markdown
 date: 2021-01-07 19:15:00 +0900
-categories: [test]
+categories: test
 tags: [test]
 description: for testing markdown
 featuredImage: ./images/sample.jpg
