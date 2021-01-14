@@ -6,6 +6,7 @@ module.exports = {
       summary: `Gatsby blog starter template`,
     },
     description: `Gatsby blog starter template`,
+    keywords: [`gatsby-starter`, `demo`, `gatsby`, `starter`, `theme`],
     siteUrl: `https://gatsby-starter-yong.netlify.app/`,
     social: {
       twitter: ``,
